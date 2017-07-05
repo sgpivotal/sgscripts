@@ -5,7 +5,7 @@
 export Space=10
 
 # Sleep for X seconds between runnning Diags.
-export sleeping='1'
+export sleeping='600'
 
 # The number of times to run the Diag script.
 export runs=3
@@ -29,7 +29,7 @@ if [[ ! -e $diag ]]; then
 fi
 cd $diag 
 
-for i in {1..2}; do
+for i in {1..10}; do
 export LOG="diag-$(date +"%Y-%m-%d-%H-%M-%s")"
 mkdir -p $LOG 
 cd $LOG
