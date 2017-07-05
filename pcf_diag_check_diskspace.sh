@@ -1,4 +1,16 @@
 #!/bin/bash
+set -e
+######################
+
+#This script gathers the following log
+#ps -ef
+#lsof -n
+#netstat -ant
+#df -h
+#free -h
+#pstree -pan
+# It runs 10 times and sleeps for 600 seconds between runs.
+# These logs are then saved to a file called diag.tar.gz
 
 ######################
 #Require minimum amout of space in GB (Using an Intager)
